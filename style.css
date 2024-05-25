@@ -59,62 +59,26 @@ Light grayish red (pink) - #f1e6e8 */
 /* --------------------- Images --------------------------*/
 
 
-/* Index - Latest Creations */
+/* Home - Header */
 
-.bg-img-gallery-1 {
-    background-image: url('/images/las-flores-co-gallery-1.jpg');
-    background-position: 50% 60%;
+.bg-image{
+    max-width: 60%;
+    border-radius: 4em;
+    background-color: #f1e6e8;
 }
 
-.bg-img-gallery-2 {
-    background-image: url('/images/las-flores-co-gallery-2.jpg');
-    background-position: 50% 64%;
-}
+/* Home - Onze behandelingen */
 
-.bg-img-gallery-3 {
-    background-image: url('/images/las-flores-co-gallery-3.jpg');
-}
-
-.bg-img-gallery-4 {
-    background-image: url('/images/las-flores-co-gallery-4.jpg');
-    background-position: 50% 20%;
-}
-
-.bg-img-gallery-5 {
-    background-image: url('/images/las-flores-co-gallery-5.jpg');
-}
-
-.bg-img-gallery-6 {
-    background-image: url('/images/las-flores-co-gallery-6.jpg');
-}
-
-.bg-img-gallery-7 {
-    background-image: url('/images/las-flores-co-gallery-7.jpg');
+.bg-image-behandelingen {
+    max-width: 60%;
+    border-radius: 4em;
+    background-color: #f1e6e8;
 }
 
 
-/* Index Image banner anniversary */
-
-.bg-img-anniversary {
-    background-image: url('/images/las-flores-co-anniversary-1.jpg');
-    background-position: 50% 49%;
-    min-height: 1vh;
-}
+/* Gelaat - Header */
 
 
-/* About - meet our team */
-
-.bg-img-about-hannah {
-    background-position: 50% 40%;
-}
-
-
-/* About - Image banner mission */
-
-.bg-img-about-banner {
-    background-image: url('/images/las-flores-co-about-banner-2.jpg');
-    background-position: 50% 40%;
-}
 
 
 /* About - image features */
@@ -142,80 +106,12 @@ Light grayish red (pink) - #f1e6e8 */
     background-image: url('/images/las-flores-co-review-emma.jpg');
 }
 
-
-/* Services small */
-
-.bg-img-store-small {
-    background-image: url('/images/las-flores-co-store-small.jpg');
-}
-
-.bg-img-subscription-small {
-    background-image: url('/images/las-flores-co-subscription-small.jpg');
-}
-
-.bg-img-delivery-small {
-    background-image: url('/images/las-flores-co-delivery-small.jpg');
-}
-
-.bg-img-workshop-small {
-    background-image: url('/images/las-flores-co-workshop-small.jpg');
-}
-
-
-/* Services - subscription banner*/
-
-.bg-img-subscription-banner {
-    background-image: url('/images/las-flores-co-subscription-banner.jpg');
-    background-position: 50% 30%;
-}
-
-
-/* Services - delivery banner */
-
-.bg-img-delivery-banner {
-    background-image: url('/images/las-flores-co-delivery-large-2.jpg');
-}
-
-.bg-img-delivery-banner-mobile {
-    background-image: url('/images/las-flores-co-delivery-large-2-mobile.jpg');
-    background-position: 50% 50%;
-}
-
-
-/* Services - workshop banner */
-
-.bg-img-workshop-banner {
-    background-image: url('/images/las-flores-co-workshop-banner-1.jpg');
-}
-
-
-/* Services - workshop */
-
-.bg-img-workshop-beginner {
-    background-image: url('/images/las-flores-co-workshop-beginner-2.jpg');
-}
-
-.bg-img-workshop-intermediate {
-    background-image: url('/images/las-flores-co-workshop-intermediate-1.jpg');
-}
-
-.bg-img-workshop-advanced {
-    background-image: url('/images/las-flores-co-workshop-advanced-1.jpg');
-}
-
-
-/* Contact - store */
-
-.bg-img-store-contact {
-    background-image: url('/images/las-flores-co-store-contact.jpg')
-}
-
-
 /* --------- Universal Styles & Utility classes ----------*/
 
 body {
     font-family: 'Hind', sans-serif;
     color: #5e5b5b;
+    background-color: #fffafa;
 }
 
 .padded-05 {padding: 0.5rem;}
@@ -283,8 +179,8 @@ body {
 }
 
 .bg-light {
-    background-color: #CB997E;
-    color: white;
+    background-color: #f1e6e8;
+    color: #8b8b8b;
 }
 
 .bg-white {
@@ -428,12 +324,6 @@ a:hover {
 
 
 /*------------------------- Header en footer styles -----------------------*/
-
-.bg-image-header {
-    max-width: 60%;
-    border-radius: 10%;
-    background-color: #f1e6e8;
-}
 
 header h3 {
     line-height: 1;
@@ -676,76 +566,11 @@ form .button {
 }
 
 
-/*--------------------------- Latest creations - slider gallery -----------------------------*/
+/*--------------------------- Welkom -----------------------------*/
 
 
-/* background Image Slider */
-
-.bg-image-slider {
-    background-color: rgb(240, 240, 240);
-    background-position: center;
-    background-size: cover;
-}
-
-
-/* Slider */
-
-.slider-container {
-    padding: 5%;
-}
-
-.slider-item {
-    padding: 1rem;
-    display: none;
-    /* otherwise your carousel would display as blocks;*/
-}
-
-.slider-item:first-child {
-    /* this makes sure that your first image of the carousel loads */
-    display: block;
-}
-
-.slick-next::before {
-    content: '→';
-}
-
-.slick-next {
-    right: 4px;
-}
-
-.slick-prev {
-    left: 4px;
-}
-
-.slick-next::before,
-.slick-prev::before {
-    font-family: slick;
-    /*padding: 0.5rem;*/
-    font-size: 20px;
-    line-height: 1;
-    opacity: .75;
-    color: rgb(90, 90, 90);
-}
-
-
-/* without this, the dots are not centered */
-
-.slick-dots {
-    left: 0;
-    bottom: -2px;
-}
-
-.slick-dots li,
-.slick-dots li button {
-    width: 10px;
-}
-
-.slick-dots li button::before {
-    color: #5e5b5b;
-}
-
-.slick-dots li.slick-active button::before {
-    color: #43463A;
+.bg-light-radius {
+    border-radius: 2em;
 }
 
 
@@ -757,30 +582,11 @@ form .button {
 .clickable-box {
     color: inherit;
     text-decoration: none;
-    box-shadow: 0 rgba(0, 0, 0, 0);
     /* so that we can add a transition */
     transition: 0.2s all;
     display: block;
     border: none;
 }
-
-.clickable-box .overlay {
-    min-height: 12rem;
-    padding: 3rem 1rem;
-    background-color: rgba(0, 0, 10, 0.4);
-    color: white;
-}
-
-.clickable-box p {
-    margin-bottom: 0;
-}
-
-.clickable-box:hover {
-    background-color: rgba(0, 0, 10, 0.6);
-    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.4), 0 10px 20px -5px rgba(0, 0, 0, 0.4);
-    margin-top: -2px;
-}
-
 
 /* Index - testimonial style */
 

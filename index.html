@@ -1,16 +1,44 @@
 ---
 layout: default
 title: S&SI Burcht Body & Beautysalon
+treatments:
+- column-size: col-4_md-6
+  background_image: /images/essentie-behandelingen-gelaat.png
+  name-treatment: Gelaatsverzorging
+  follow-link: /gelaat.html
+- column-size: col-4_md-6
+  background_image: /images/essentie-behandelingen-8.png
+  name-service: Pedicure
+  follow-link: /pedicure.html
+- column-size: col-4_md-6
+  background_image: /images/essentie-behandelingen-massage.png
+  name-service: Lichaam
+  follow-link: /lichaam.html
+- column-size: col-4_md-6
+  background_image: /images/essentie-behandelingen-ontharing.png
+  name-service: Ontharing
+  follow-link: /ontharing.html
+- column-size: col-4_md-6
+  background_image: /images/essentie-behandelingen-manicure.png
+  name-service: Manicure
+  follow-link: /manicure.html
+- column-size: col-4_md-6
+  background_image: /images/essentie-behandelingen-arrangementen.png
+  name-service: Arrangementen
+  follow-link: /arrangementen.html
 ---
+
+<!------------------------------- Header  ----------------------------->
 <header class="padded-1 grid tall-100 md-tall-80">
     {% include site-header-nav.html %}
     <section class="grid-center padded-5">
-        <div class="col-7_md-6_xs-12-middle padded-2">
+        <div class="col-7_md-6_xs-12-middle padded-5">
             <h2 class="big-text">Geef om <br> uw <span class="underline-text">lichaam</span></h2> 
         </div>
+        <a href=""></a>
 
-        <div class="col-4_md-6xs-12 padded-1"> 
-            <img src="/images/essentie-behandelingen-gelaat-1.png" class="bg-image-header">
+        <div class="grid-right col-4_md-6xs-12"> 
+            <img src="/images/essentie-behandelingen-gelaat-1.png" class="bg-image">
         </div>
 
         <div class="col-12 padded-2"> 
@@ -19,6 +47,43 @@ title: S&SI Burcht Body & Beautysalon
     </section>
 </header>
 
-<section>
+<!------------------------------- Welcome  ----------------------------->
+<section class="padded-5 grid tall-100 md-tall-80">
+    <div class="grid-center bg-light bg-light-radius">
+        <div class="grid-center bg-image-welcome col-6"> </div>
+        
+        <div class="grid-center col-6"> 
+            <h2> Welkom bij S&SI Burcht </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas tempore, cumque dolorum quos adipisci veritatis architecto ut exercitationem praesentium non accusantium voluptatibus consequuntur vitae accusamus reprehenderit qui a quas quis.</p>
+        </div>
+    </div>
+</section>
 
+<!------------------------------- Treatments  ----------------------------->
+<section class="padded-5 grid">
+
+    <h2> Onze behandelingen </h2>
+        
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati provident, fugit ipsa magnam nihil velit eius maiores excepturi aut nostrum suscipit officiis voluptatum alias ipsam. </p>
+        
+    <div class="grid-equalHeight padded-1"> 
+                
+        {% for item in page.treatments %}
+        <div class="padded-05 {{item.column-size}}"> 
+            <a href="{{item.follow-link}}" class="clickable-box bg-image" style="background-image: url('{{item.background_image}}');"> </a>
+            <p class="title"> {{item.name-treatment}} </p>
+        </div>
+        {% endfor %}
+
+    </div> 
+</section>
+
+<!------------------------------- Contact  ----------------------------->
+<section class="padded-5 grid tall-100 md-tall-80">
+    <div class="grid-center bg-light bg-light-radius">
+        <div class="col-6"> 
+            <h2> Reserveren </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas tempore, cumque dolorum quos adipisci veritatis architecto ut exercitationem praesentium non accusantium voluptatibus consequuntur vitae accusamus reprehenderit qui a quas quis.</p>
+        </div>
+    </div>
 </section>
